@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Blog</title>
+    <style>
+        .nav-item:hover{
+            opacity: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="index.html">Grand Carrefour</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link text-white active" aria-current="page" href="index.html">Accueil</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" role="button" aria-controls="offcanvasWithBothOptions">
+                           A propos
+                        </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Nous contacter</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- offcanvas of about -->
+    <div class="offcanvas offcanvas-start shadow-lg" data-bs-scroll="false" data-bs-backdrop="false" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-bold text-center" id="offcanvasWithBothOptionsLabel">Horaires d'ouverture et fermeture</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <hr class="my-0">
+        <div class="offcanvas-body">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Jours</th>
+                    <th scope="col">Ouverture (h)</th>
+                    <th scope="col">Fermeture (h)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Lundi</td>
+                    <td>07h30</td>
+                    <td>22h00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Mardi</td>
+                    <td>07h30</td>
+                    <td>22h00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Mercredi</td>
+                    <td>07h30</td>
+                    <td>22h00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Jeudi</td>
+                    <td>10h30</td>
+                    <td>22h00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Vendredi</td>
+                    <td>07h30</td>
+                    <td>22h00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Samedi</td>
+                    <td>08h00</td>
+                    <td>22h00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>Dimanche</td>
+                    <td>08h00</td>
+                    <td>22h30</td>
+                  </tr>
+                </tbody>
+            </table>
+            
+        </div>
+      </div>
+    <!-- Page header with logo and tagline-->
+    <header class="py-5 bg-dark border-bottom mb-4">
+        <div class="container">
+            <div class="text-center text-white my-5">
+                <h1 class="fw-bolder">Bienvenue au Grand Carrefour !</h1>
+                <p class="lead mb-0">Vous faire plaisir nous fait plaisir. Entrez par curiosité et restez par satisfaction !</p>
+            </div>
+        </div>
+    </header>
+    <!-- Page content-->
+    <div class="container">
+        <div class="row">
+            <!-- Blog entries-->
+            <div class="col-lg-8">
+                <!-- Featured blog post-->
+                <div class="card mb-4">
+                    <a href="#!"><img class="card-img-top" height="400" src="img/cahier 2.jpg" alt="..." /></a>
+                    <div class="card-body">
+                        <div class="small text-muted">Septembre 4, 2022</div>
+                        <h2 class="card-title">Spécial rentrée scolaire 2022 - 2023</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                        <a class="btn btn-primary" href="#!">Plus d'informations →</a>
+                    </div>
+                </div>
+                <!-- Nested row for non-featured blog posts-->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!-- Blog post-->
+                        <div class="card mb-4">
+                            <a href="#!"><img class="card-img-top" src="img/sac de classe.jpg" height="250" width="290" alt="..." /></a>
+                            <div class="card-body">
+                                <div class="small text-muted">January 1, 2022</div>
+                                <h2 class="card-title h4">Post Title</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                                <a class="btn btn-primary" href="#!">Read more →</a>
+                            </div>
+                        </div>
+                        <!-- Blog post-->
+                        <div class="card mb-4">
+                            <a href="#!"><img class="card-img-top" src="img/savons de toilette.jpg" height="215" width="290" alt="..." /></a>
+                            <div class="card-body">
+                                <div class="small text-muted">January 1, 2022</div>
+                                <h2 class="card-title h4">Post Title</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                                <a class="btn btn-primary" href="#!">Read more →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- Blog post-->
+                        <div class="card mb-4">
+                            <a href="#!"><img class="card-img-top" src="img/javel.jpg" height="215" width="290" alt="..." /></a>
+                            <div class="card-body">
+                                <div class="small text-muted">January 1, 2022</div>
+                                <h2 class="card-title h4">Post Title</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                                <a class="btn btn-primary" href="#!">Read more →</a>
+                            </div>
+                        </div>
+                        <!-- Blog post-->
+                        <div class="card mb-4">
+                            <a href="#!"><img class="card-img-top" src="img/laits enfants.jpg" height="215" width="290" alt="..." /></a>
+                            <div class="card-body">
+                                <div class="small text-muted">January 1, 2022</div>
+                                <h2 class="card-title h4">Post Title</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.</p>
+                                <a class="btn btn-primary" href="#!">Read more →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Side widgets-->
+            <div class="col-lg-4">
+                <!-- Categories widget-->
+                <div class="card mb-4">
+                    <div class="card-header"><img src="img/male.png" height="45px" alt="logo localisation"> Nos services</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="mb-0">
+                                    <li><a class="text-decoration-none text-muted" href="#!">Papeterie</a></li>
+                                    <li><a class="text-decoration-none text-muted" href="#!">Produits alimentaires</a></li>
+                                    <li><a class="text-decoration-none text-muted" href="#!">Boulangerie</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="mb-0">
+                                    <li><a class="text-decoration-none text-muted" href="#!">Patisserie</a></li>
+                                    <li><a class="text-decoration-none text-muted" href="#!">Produits cosmetiques</a></li>
+                                    <li><a class="text-decoration-none text-muted" href="#!">Produits de vigne</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Side widget-->
+                <div class="card mb-4">
+                    <div class="card-header"><img src="img/product-description.png" height="45px" alt="logo localisation"> Description</div>
+                    <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
+                    <div class="container alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>Attention :</strong> Boutique située au niveau de Ndogpassi 2 Saint nicolas, qui est totalement différent et n'entretient aucun lien avec Carrefour Market. Merci!
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </div>
+                <!-- Side widget-->
+                <div class="card mb-4">
+                    <div class="card-header"><img src="img/navigation.png" height="45px" alt="logo localisation"> Localisation</div>
+                    <div class="card-body">
+                        <div class="mapouter d-flex justify-content-center">
+                            <div class="gmap_canvas">
+                                <iframe width="310" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Grand%20carrefour%20Saint%20Nicolas&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{height:316px;width:370px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:316px;width:370px;}</style>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Search widget-->
+                <div class="card mb-4" id="contact">
+                    <div class="card-header"><img src="img/message.png" height="45px" alt="logo contact-us"> Nous contacter</div>
+                    <div class="card-body">
+                        <img src="img/Contact us-rafiki.png" class="container d-flex justify-content-center" height="160px" alt="illustration contact-us">
+                        <form action="#" class="form-group" method="post">
+                            <div class="form-group form-floating mb-3">
+                                <input type="text" id="floatingNom" class="form-control" placeholder="Nom">
+                                <label for="floatingNom">Nom</label>
+                            </div>
+                            <div class="form-group form-floating mb-3">
+                                <input type="email" id="floatingEmail" class="form-control" placeholder="Email">
+                                <label for="floatingEmail">Email</label>
+                            </div>
+                            <div class="form-group form-floating mb-3">
+                                <textarea name="message" id="message" class="form-control" cols="40" placeholder="Message" rows="20"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            <div class="input-group">
+                                <button class="btn btn-primary" type="submit" id="button-search" type="button">Envoyer</button>
+                            </div>
+                        </form>
+                        <br>
+                        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                            <strong>Attention</strong> Nous vous invitons à faire preuve de respect dans vos propos. Merci!
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-0">
+
+    <section class="galery py-5 bg-light">
+
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container"><p class="m-0 text-center text-white">Copyright &copy; 2022</p></div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
